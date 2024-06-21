@@ -47,7 +47,17 @@ h2 {
     margin-bottom: 20px;
     color: #009688;
 }
-
+.content, .cause-stories, form {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.cause-stories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
 
