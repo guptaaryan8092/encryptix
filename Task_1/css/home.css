@@ -58,9 +58,38 @@ h2 {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.story {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
 
+.story h3 {
+    color: #009688;
+    margin-bottom: 10px;
+}
 
+.all-pictures {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
+.image img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-style:groove ;
+    
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
 
 
 
