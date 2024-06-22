@@ -90,8 +90,21 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
 }
-
-
+form .form-group {
+    margin-bottom: 20px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 .btn {
     display: inline-block;
@@ -110,4 +123,35 @@ h2 {
     background: #009688;
     color: white;
     border: none;
+}
+
+div ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.barcode img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-style:groove ;
+    
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    
+    margin: 10px;
+}
+.barcode {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
