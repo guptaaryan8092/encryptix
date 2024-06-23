@@ -63,7 +63,7 @@ h2 {
     margin-bottom: 20px;
     color: #009688;
 }
-.content, .cause-list, form ,#donate_now , .some-story{
+.content, .cause-list, form ,#donate_now p, .some-story,{
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
@@ -99,11 +99,11 @@ h2 {
     width: 300px;
     height: 200px;
     object-fit: cover;
-    border-style:groove ;
-    
+    border-style:outset ;
+
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 80px;
+    box-shadow: 0 10px    rgba(60, 255, 0, 0.1);
     margin: 10px;
 }
 
@@ -116,11 +116,11 @@ h2 {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border-style:groove ;
+    border-style:inset ;
     
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 200px;
+    box-shadow: 0 15px 0 0 rgba(72, 255, 0, 0.1);
     margin: 10px; 
 }
 
