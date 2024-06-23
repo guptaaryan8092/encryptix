@@ -63,7 +63,7 @@ h2 {
     margin-bottom: 20px;
     color: #009688;
 }
-.content, .cause-list, form ,#donate_now p, .some-story,{
+.content, .cause-list, form ,#donate_now p, .some-story{
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
