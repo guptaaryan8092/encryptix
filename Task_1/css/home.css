@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #009688;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #009688;
     color: white;
     padding: 10px 10px;
     text-align: center;
@@ -37,8 +37,11 @@ nav ul {
     justify-content: center;
     margin-bottom: 20px;
 }
-
-nav ul li {
+/*nav ul li  {
+    margin: 0 5px ; 
+}*/
+nav ul li a {
+    color: #ff5722;
     margin: 0 10px ;
 }
 .hero-text {
@@ -63,7 +66,7 @@ h2 {
     margin-bottom: 20px;
     color: #009688;
 }
-.content, .cause-list, form ,#donate_now p, .some-story{
+.content, .cause-list, form , .some-story{
     background: #f4f4f4;
     padding: 20px;
     border-radius: 5px;
@@ -205,9 +208,10 @@ footer {
     gap: 20px; 
 }
 
-.join-us p::after {
-    content: " \1F449"; /* Unicode for "👉" From css we can also add as wll as from HTML*/
-}
+/*.join-us p::after {
+    content: " \1F449";  Unicode for "👉" From css we can also add as wll as from HTML
+} 
+*/
 
 #donate .content {
     display: flex;
