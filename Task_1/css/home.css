@@ -11,11 +11,14 @@ body {
 
 header {
     background: linear-gradient(to right, #009688, #4caf50);
+    border-style: solid;
+    border-radius: 5%;
+ 
     color: white;
-    padding: 10px 0;
+    padding: 10px 10px;
     text-align: center;
     position: relative;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 15px  rgba(0, 0, 0, 0.1);
 }
 
 .logo-container img{
@@ -76,7 +79,7 @@ nav ul li a {
     display: flex;
     font-weight: bold;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 .join-us p {
     font-size: 1.1em;
@@ -274,7 +277,7 @@ footer {
 .center-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     margin-top: 20px;
 }
 
@@ -298,7 +301,7 @@ footer .new-font p {
   font-style: normal;
   text-decoration: underline;
 }
-@media (max-width: 576px)
+@media (max-width: 768px)
 {
     nav ul li a {
         align-items: center;
