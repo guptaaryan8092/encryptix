@@ -5,52 +5,108 @@
 body {
     line-height: 1.6;
     color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #009688;
+    background: linear-gradient(to right, #009688, #4caf50);
     color: white;
-    padding: 10px 10px;
+    padding: 10px 0;
     text-align: center;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .logo-container img{
-    width: 180px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 180px; 
+    height: 140px; 
     border-radius: 50%;
     align-items: center;
     background-color: white;
-    padding: 20px;
-    object-fit:cover; /* Ensures the image fits well within the circle */
-    border: 2px solid #ddd; /* Optional: adds a border around the circle */
+    padding: 10px;
+    object-fit:cover; 
+    border: 5px solid #444343; 
 }
 
 .some-story p , .content p {
     text-align: justify;
   }
+  
+.content p {
+    text-align: justify;
+    line-height: 1.6;
+}
+.content strong {
+    color:#388e3c; 
+    font-weight: bold;
+}
+.content  {
+
+    text-align: center;
+}
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+    padding-left: 0;
 }
-/*nav ul li  {
+nav ul li a:hover {
+    color: #ffeb3b;
+} 
+
+
+nav ul li  {
     margin: 0 5px ; 
-}*/
-nav ul li a {
-    color: #ff5722;
-    margin: 0 10px ;
 }
+nav ul li a {
+   
+    
+    padding: 10px 30px;
+    align-items: center;
+    font-size: x-large;
+    display: flex;
+    margin: 0 12px ;
+    transition: color 0.3s;
+    letter-spacing: .4px;
+}
+.join-us {
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    gap: 20px;
+}
+.join-us p {
+    font-size: 1.1em;
+}
+
+.join-us a{
+    
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    transition: color 0.3s;
+}
+.join-us a:hover {
+    color: #ffeb3b;
+}
+
+/*.join-us p::after {
+    content: " \1F449";  Unicode for "👉" From css we can also add as wll as from HTML
+} 
+*/
+
 .hero-text {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: 20px auto;
+    text-align: center;
 }
 .hero-text h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 .hero-text p {
     font-size: 1.2em;
@@ -60,6 +116,7 @@ nav ul li a {
     width: 90%;
     margin: 0 auto;
     padding: 30px 0;
+    justify-content: center;
 }
 h2 {
     text-align: center;
@@ -126,6 +183,20 @@ h2 {
     box-shadow: 0 15px 0 0 rgba(72, 255, 0, 0.1);
     margin: 10px; 
 }
+.first-story p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.first-story .highlight-text,.second-story .highlight-text {
+    font-weight: bold;
+    color: #388e3c; /* Highlight color for emphasis */
+}
+
+.first-story strong {
+    font-weight: bold;
+}
+
 
 
 form .form-group {
@@ -148,15 +219,21 @@ form input, form textarea {
     display: inline-block;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     text-align: center;
+    transition: background 0.3s, transform 0.3s;
 }
 
 .btn-primary {
     background: #ff5722;
     color: white;
 }
+.btn-primary:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
 .btn-secondary {
     background: #009688;
     color: white;
@@ -194,26 +271,14 @@ footer {
     padding: 20px 0;
 }
 
-
 .center-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; 
+    margin-top: 20px;
 }
 
-.join-us {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-}
-
-/*.join-us p::after {
-    content: " \1F449";  Unicode for "👉" From css we can also add as wll as from HTML
-} 
-*/
-
-#donate .content {
+#donate .content,#donate_now .content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -226,12 +291,35 @@ footer {
     display: none;
 }
 
-
-
 footer .new-font p {
   font-family: "Playwrite AU VIC", cursive;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
   text-decoration: underline;
+}
+@media (max-width: 576px)
+{
+    nav ul li a {
+        align-items: center;
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        font: size large;
+        margin: 3px 0;
+    }
+    .story-container {
+        flex-direction: column;
+    }
+    .story-image {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .story-images {
+        flex-direction: column;
+    }
 }
