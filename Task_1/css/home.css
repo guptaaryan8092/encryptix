@@ -60,7 +60,6 @@ nav ul li a:hover {
     color: #ffeb3b;
 } 
 
-
 nav ul li  {
     margin: 0 5px ; 
 }
@@ -173,7 +172,7 @@ h2 {
 .story-image  {
     display: flex;
     justify-content:auto; 
-    flex-wrap: wrap;/* Flex items will wrap onto multiple lines if necessary*/
+    flex-wrap: wrap;
 }
 .some-story img{
     width: 300px;
@@ -193,14 +192,12 @@ h2 {
 
 .first-story .highlight-text,.second-story .highlight-text {
     font-weight: bold;
-    color: #388e3c; /* Highlight color for emphasis */
+    color: #388e3c;
 }
 
 .first-story strong {
     font-weight: bold;
 }
-
-
 
 form .form-group {
     margin-bottom: 20px;
@@ -277,7 +274,6 @@ footer {
 .center-container {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
     margin-top: 20px;
 }
 
