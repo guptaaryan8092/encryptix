@@ -100,3 +100,22 @@ nav ul li a.active, nav ul li a:hover
         left: 0;
     }
 }
+
+/* Header Styles */
+header {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    margin: 0;
+}
+
+
