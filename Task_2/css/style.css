@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    text-decoration: none;
+    
 }
 body 
 {
@@ -21,20 +21,16 @@ nav
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
-    
 }
-
 nav ul 
 {
     display: flex;
     align-items: center;
 }
-
 nav ul li 
 {
     margin: 0 5px;
 }
-
 nav ul li a 
 {
     color: #000;
@@ -43,8 +39,8 @@ nav ul li a
     border-radius: 5px;
     text-transform: uppercase;
     transition: background 0.5s;
+    text-decoration: none;
 }
-
 nav ul li a.active, nav ul li a:hover 
 {
     background: #774787;
@@ -57,12 +53,10 @@ nav ul li a.active, nav ul li a:hover
     color: #812424;
     cursor: pointer;
 }
-
 #check 
 {
     display: none;
 }
-
 @media (max-width: 858px) 
 {
     .checkbtn 
@@ -83,11 +77,12 @@ nav ul li a.active, nav ul li a:hover
     }
     nav ul li 
     {
-        margin: 50px 0;
+        margin: 35px 0;
     }
     nav ul li a 
     {
         font-size: 20px;
+        font-weight: 200;
         color: #fff;
     }
     nav ul li a.active, nav ul li a:hover 
@@ -109,15 +104,12 @@ header {
     padding: 2rem 1rem;
     
 }
-
 header h1 {
     margin-bottom: 0.5rem;
 }
-
 header p {
     margin: 0;
 }
-
 /* about Section Styles */
 section {
     padding: 2rem 1rem;
@@ -131,32 +123,99 @@ section {
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
+.styled-paragraph {
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    border-left: 5px solid #774787;
+    border-right: 5px solid #774787;
+    border-radius: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+    text-align: justify;
+}
+
 
 /* Skills Section Styles */
+#skills {
+    padding: 40px 0;
+    background-color: #c7b2b2;
+}
+
+#skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
 .skills-container {
     margin-bottom: 2rem;
 }
 
 .skills-container h3 {
+    font-size: 1.75rem;
     margin-bottom: 1rem;
+    color: #555;
+    border-bottom: 2px solid #774787;
+    font-weight: 600;
+    padding-bottom: 5px;
+    display: inline-block;
 }
 
 .skills-container ul {
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
+    padding: 0;
+    list-style: none;
 }
 
 .skills-container ul li {
-    background: #c8b5b5;
-    padding: 0.5rem 1rem;
+    background: #fff;
+    padding: 10px 20px;
     border-radius: 5px;
-    margin: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight:550;
+}
+
+.skills-container ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    #skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .skills-container ul li {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
 }
 
 /* Projects Section Styles */
 #projects {
-    
+    background-color: #a09696;
     padding: 2rem 1rem;
     text-align: center;
 }
@@ -174,7 +233,7 @@ section {
 .project p {
     flex: 1;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .project h3 {
@@ -182,7 +241,7 @@ section {
     font-size: 1.5rem;
 }
 
-.project a {
+ .project .abc  {
     display: inline-block;
     margin-top: 1rem;
     text-decoration: none;
@@ -192,7 +251,11 @@ section {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
-
+.project .styled-paragraph a
+{
+    text-decoration: none;
+    text-align:right;
+}
 .project a:hover {
     background-color: #39bbd8;
     transform: scale(1.09);
@@ -206,32 +269,6 @@ section {
     border-radius: 5px;
 }
 /* Media Queries project */
-@media (min-width: 600px) {
-    header, section, footer {
-        padding: 2rem 4rem;
-    }
-}
-@media (max-width: 768px) {
-    .project {
-        flex-direction: column;
-    }
-
-    .project-details {
-        padding-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .project img {
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        border-style:groove ;
-        padding: 20px;
-        border-radius: 50%;
-        box-shadow: 0 10px    rgba(94, 100, 197, 0.1);
-        margin: 10px;
-    }
-}
 
 
 /* Resume Section Styles */
@@ -269,7 +306,7 @@ section {
     }
 
     #resume h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #resume a {
@@ -280,7 +317,7 @@ section {
 /* Contact Section Styles */
 #contact {
 
-    padding: 4rem 1rem;
+    padding: 2rem 1rem;
     text-align: center;
 }
 #contact .container {
@@ -301,10 +338,13 @@ section {
     font-weight: 600;
     transition: color 0.3s ease;
     text-align: center;
+    text-decoration: none;
+    
+    
 }
-#cotact a:hover {
-    color: #39bbd8;
-    transform: scale(1.09);
+#contact a:hover {
+    color: #39bbd8 ;
+    transform: scale(1.09) ;
 }
 #contact .fas.fa-envelope {
     color: #d44638;
@@ -317,7 +357,7 @@ section {
     }
 
     #contact h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #contact p {
@@ -350,6 +390,10 @@ section {
 {
     margin-top: 10px;
     font-size: 40px;
+}
+#social .fab.fa-github {
+    color: #000000;
+   
 }
 
 /* Footer Styles */
@@ -385,12 +429,16 @@ footer p {
 
 /* HR Styles */
 hr {
-    border: 0;
-    height: 4px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    margin: 2rem 0;
+    border: none;
+    height: 4px !important;
+    background: linear-gradient(to right, #070707, #786060);
+    margin: 2rem auto;
     border-radius: 2px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+}
+/* Media Queries hr */
+@media (max-width: 600px)
+{
+
 }
