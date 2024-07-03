@@ -118,4 +118,17 @@ header p {
     margin: 0;
 }
 
+/* Section Styles */
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
 
