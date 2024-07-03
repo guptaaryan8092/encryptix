@@ -118,7 +118,7 @@ header p {
     margin: 0;
 }
 
-/* Section Styles */
+/* about Section Styles */
 section {
     padding: 2rem 1rem;
     text-align: center;
@@ -132,3 +132,24 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Skills Section Styles */
+.skills-container {
+    margin-bottom: 2rem;
+}
+
+.skills-container h3 {
+    margin-bottom: 1rem;
+}
+
+.skills-container ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-container ul li {
+    background: #c8b5b5;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0.5rem;
+}
