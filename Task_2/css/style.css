@@ -222,7 +222,14 @@ section {
     }
 
     .project img {
-        width: 100%;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-style:groove ;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0 10px    rgba(94, 100, 197, 0.1);
+        margin: 10px;
     }
 }
 
@@ -325,26 +332,6 @@ section {
 {
     margin-top: 10px;
     font-size: 40px;
-}
-/* Media Queries */
-@media (min-width: 600px) {
-    header, section, footer {
-        padding: 2rem 4rem;
-    }
-}
-@media (max-width: 768px) {
-    .project {
-        flex-direction: column;
-    }
-
-    .project-details {
-        padding-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .project img {
-        width: 100%;
-    }
 }
 
 /* Container Styles */
