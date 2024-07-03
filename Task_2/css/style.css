@@ -205,6 +205,27 @@ section {
     height: auto;
     border-radius: 5px;
 }
+/* Media Queries project */
+@media (min-width: 600px) {
+    header, section, footer {
+        padding: 2rem 4rem;
+    }
+}
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-details {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+    }
+}
+
 
 /* Resume Section Styles */
 #resume {
@@ -247,4 +268,142 @@ section {
     #resume a {
         font-size: 1.25rem;
     }
+}
+
+/* Contact Section Styles */
+#contact {
+
+    padding: 4rem 1rem;
+    text-align: center;
+}
+#contact .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+#contact p {
+    font-size: 1.25rem;
+    color: #555;
+}
+#contact a {
+    color: #774787;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+#cotact a:hover {
+    color: #39bbd8;
+    transform: scale(1.09);
+}
+#contact .fas.fa-envelope {
+    color: #d44638;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+}
+@media (max-width: 600px) {
+    #contact {
+        padding: 2rem 2rem;
+    }
+
+    #contact h2 {
+        font-size: 2.5rem;
+    }
+
+    #contact p {
+        font-size: 1.5rem;
+    }
+}
+#social a
+{
+    margin: 10px;
+}
+.fab.fa-linkedin,.fab.fa-github,.fab.fa-twitter
+{
+    margin-top: 10px;
+    font-size: 40px;
+}
+/* Media Queries */
+@media (min-width: 600px) {
+    header, section, footer {
+        padding: 2rem 4rem;
+    }
+}
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-details {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+    }
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/*social style*/
+#social a
+{
+    margin: 10px;
+}
+.fab.fa-linkedin,.fab.fa-github,.fab.fa-twitter
+{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    font-weight: 600;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+/* Media Queries */
+@media (max-width: 600px) {
+    footer p {
+        font-size: 0.875rem;
+    }
+   
+}
+
+/* HR Styles */
+hr {
+    border: 0;
+    height: 4px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 2rem 0;
+    border-radius: 2px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
