@@ -205,3 +205,46 @@ section {
     height: auto;
     border-radius: 5px;
 }
+
+/* Resume Section Styles */
+#resume {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+#resume .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#resume h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+#resume a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #774787;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+#resume a:hover {
+    background-color: #39bbd8;
+    transform: scale(1.09);
+}
+@media (max-width: 600px) {
+    #resume {
+        padding: 2rem 2rem;
+    }
+
+    #resume h2 {
+        font-size: 2.5rem;
+    }
+
+    #resume a {
+        font-size: 1.25rem;
+    }
+}
