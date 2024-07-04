@@ -8,13 +8,17 @@ document.addEventListener('DOMContentLoaded', () => {
             const value = button.textContent;
 
             switch (value) {
-                case 'C':
+                case 'AC':
                     displayValue = '';
                     display.textContent = '0';
                     break;
                 case 'DEL':
                     displayValue = displayValue.slice(0, -1);
                     display.textContent = displayValue || '0';
+                    break;
+                case '%':
+                    displayValue = (parseFloat(displayValue) / 100).toString();
+                    display.textContent = displayValue;
                     break;
                 case '=':
                     try {
@@ -35,3 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+let isDarkMode = false;
+
+function toggleTheme() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    isDarkMode = !isDarkMode;
+}

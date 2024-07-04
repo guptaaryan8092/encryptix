@@ -1,3 +1,4 @@
+/* styles.css */
 body {
     display: flex;
     justify-content: center;
@@ -48,31 +49,99 @@ body {
   }
   
   .operator {
-    background: #f28b02;
+    background: #da953a;
   }
   
   .operator:hover {
     background: #f2a200;
   }
   
-  .equal {
-    grid-column: span 2;
+  #equal {
     background: #00b894;
   }
   
-  .equal:hover {
+  #equal:hover {
     background: #00d2aa;
   }
   
-  .zero {
-    grid-column: span 2;
-  }
   
   #clear {
-    background: #d63031;
+    background: #df4949;
+    grid-column: span 2;
+    
   }
   
   #clear:hover {
     background: #e74c3c;
   }
+  /* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .calculator {
+        max-width: 300px;
+    }
+
+    .btn {
+        font-size: 1.2rem; 
+        padding: 15px; 
+    }
+
+    .display {
+        font-size: 1.5rem; 
+        padding: 15px; 
+    }
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.calculator.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.display.dark-mode {
+    background-color: #555;
+    color: #fff;
+}
+
+.btn.dark-mode {
+    background-color: #444;
+    color: #fff;
+}
+
+/* Theme toggle button styles */
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #e5d41c;
+    transition: color 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    color: #a5a2a2;
+}
+
+.theme-toggle-btn .fas {
+    margin: 0 8px;
+}
+
+.theme-toggle-btn .fas.fa-moon {
+    display: none;
+}
+
+.dark-mode .theme-toggle-btn .fas.fa-sun {
+    display: none;
+}
+
+.dark-mode .theme-toggle-btn .fas.fa-moon {
+    display: inline-block;
+}
+
+
+
   
