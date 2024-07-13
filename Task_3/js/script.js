@@ -1,10 +1,23 @@
+
+
 document.addEventListener('DOMContentLoaded', () => {
+    
+
     const display = document.getElementById('display');
     const buttons = Array.from(document.getElementsByClassName('btn'));
+    const colorChangeBtn = document.querySelector('.color-change-btn');
+    const calculator = document.querySelector('.calculator');
+    
     let displayValue = '';
+    const colors = ['orange', 'purple', 'brown','blue','Turquoise'];
+    let currentColorIndex = 0;
+
+    const clickSound = new Audio('mp3/My Video.mp3'); // Path to your sound file
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
+            clickSound.play(); // Play sound on button click
+
             const value = button.textContent;
 
             switch (value) {
@@ -38,7 +51,15 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Color change button event listener
+    colorChangeBtn.addEventListener('click', () => {
+        currentColorIndex = (currentColorIndex + 1) % colors.length;
+        calculator.style.backgroundColor = colors[currentColorIndex];
+    });
 });
+
+// Working of Theme
 let isDarkMode = false;
 
 function toggleTheme() {
@@ -46,3 +67,6 @@ function toggleTheme() {
     body.classList.toggle('dark-mode');
     isDarkMode = !isDarkMode;
 }
+
+
+

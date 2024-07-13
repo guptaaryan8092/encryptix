@@ -6,7 +6,7 @@ body {
     height: 100vh;
     background: #f0f0f0;
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   .calculator {
@@ -16,7 +16,13 @@ body {
     padding: 20px;
     width: 400px;
   }
-  
+  .calculator p{
+    color: #13ebbf !important;
+    text-align: center;
+    font-weight: 600;
+    
+  }
+
   .display {
     background: #444;
     border-radius: 10px;
@@ -25,6 +31,9 @@ body {
     padding: 20px;
     text-align: right;
     margin-bottom: 20px;
+    overflow: hidden; /* Prevent overflow */
+    word-wrap: break-word;/* Wrap long words */
+    text-overflow: ellipsis;/* ... after big text*/
   }
   
   .buttons {
@@ -78,6 +87,7 @@ body {
 @media screen and (max-width: 600px) {
     .calculator {
         max-width: 300px;
+       
     }
 
     .btn {
@@ -87,7 +97,7 @@ body {
 
     .display {
         font-size: 1.5rem; 
-        padding: 15px; 
+        padding: 30px; 
     }
 }
 
@@ -117,7 +127,7 @@ body.dark-mode {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 18px;
     color: #e5d41c;
     transition: color 0.3s;
 }
@@ -140,4 +150,21 @@ body.dark-mode {
 
 .dark-mode .theme-toggle-btn .fas.fa-moon {
     display: inline-block;
+}
+
+/* Color button styles */
+.color-change-btn {
+  background: #444;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  margin: 0 5px 20px;
+  padding: 1px 3px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.color-change-btn:hover {
+  background: #666;
 }
